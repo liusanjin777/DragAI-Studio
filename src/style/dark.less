@@ -1,0 +1,16 @@
+// dark风格会覆盖之前的样式 这里再次清空下通用标签的样式
+@tailwind base;
+
+:root {
+  //color-scheme: 可以自动修改原生元素的颜色
+  color-scheme: dark;
+
+  //深色模式下的颜色
+  --color-background: var(--vt-c-black);
+  --color-background-soft: var(--vt-c-black-soft);
+  --color-background-mute: var(--vt-c-black-mute);
+  --color-border: var(--vt-c-divider-dark-2);
+  --color-border-hover: var(--vt-c-divider-dark-1);
+  --color-heading: var(--vt-c-text-dark-1);
+  --color-text: var(--vt-c-text-dark-2);
+}

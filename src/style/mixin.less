@@ -1,0 +1,65 @@
+/** 常用的样式混合 */
+
+/** 垂直水平居中 */
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/** flex垂直布局 */
+.flex-vertical {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/** 超出文本用省略号代替 */
+.ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/** 超出文本用省略号代替（多行） */
+.ellipsis-multi-row(@row) {
+  display: box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: @row;
+  overflow: hidden;
+}
+
+/** 背景图 */
+.bg-img(@url) {
+  background: url(@url) no-repeat;
+  background-size: 100% 100%;
+}
+
+/** 背景颜色 */
+.bg(@color: #fff) {
+  background: @color;
+}
+
+/** 边框 */
+.border(@color: red) {
+  border: 1px solid @color;
+}
+
+/** 尺寸 */
+.size(@width, @height) {
+  width: @width;
+  height: @height;
+}
+
+/** 正方形 */
+.square(@len) {
+  width: @len;
+  height: @len;
+}
+
+/** 圆形 */
+.circle(@dia) {
+  width: @dia;
+  height: @dia;
+  border-radius: 100%;
+}

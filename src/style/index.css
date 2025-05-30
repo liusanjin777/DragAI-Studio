@@ -1,0 +1,20 @@
+/**
+  * @Author zhayuechao@leinao.ai
+  * @Date 2023-04-19
+  * @des tailwindcss 入口文件
+  *
+ */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 第一种方式修改基础样式 */
+@layer base {
+  /* h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  } */
+}

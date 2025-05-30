@@ -1,0 +1,47 @@
+@import './antd.less';
+
+/* 本文件内颜色变量自行修改或者删除,目前只是举个例子 */
+
+/* 全局CSS颜色变量 */
+:root {
+  --vt-c-white: #fff;
+  --vt-c-white-soft: #f8f8f8;
+  --vt-c-white-mute: #f2f2f2;
+  --vt-c-black: #181818;
+  --vt-c-black-soft: #222;
+  --vt-c-black-mute: #282828;
+  --vt-c-indigo: #2c3e50;
+  --vt-c-divider-light-1: rgb(60 60 60 / 29%);
+  --vt-c-divider-light-2: rgb(60 60 60 / 12%);
+  --vt-c-divider-dark-1: rgb(84 84 84 / 65%);
+  --vt-c-divider-dark-2: rgb(84 84 84 / 48%);
+  --vt-c-text-light-1: var(--vt-c-indigo);
+  --vt-c-text-light-2: rgb(60 60 60 / 66%);
+  --vt-c-text-dark-1: var(--vt-c-white);
+  --vt-c-text-dark-2: rgb(235 235 235 / 64%);
+}
+
+/* 浅色模式下的颜色 */
+/* stylelint-disable-next-line no-duplicate-selectors */
+:root {
+  --color-background: var(--vt-c-white);
+  --color-background-soft: var(--vt-c-white-soft);
+  --color-background-mute: var(--vt-c-white-mute);
+  --color-border: var(--vt-c-divider-light-2);
+  --color-border-hover: var(--vt-c-divider-light-1);
+  --color-heading: var(--vt-c-text-light-1);
+  --color-text: var(--vt-c-text-light-1);
+  --section-gap: 160px;
+}
+
+/* 文字颜色: 与 tailwind.config.js 文件中的颜色变量一致 */
+@primary-text-color: #303133;
+@regular-text-color: #606266;
+@secondary-text-color: #909399;
+@placeholder-text-color: #a8abb2;
+@disabled-text-color: #c0c4cc;
+
+/* 背景颜色 */
+@page-bg-color: #f2f3f5;
+@base-bg-color: var(--color-background);
+@base-border-color: var(--color-background-soft);

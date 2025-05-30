@@ -1,0 +1,12 @@
+{
+  // 在当前项目中，需要安装哪些插件。
+  "recommendations": [
+    "ant-design-vue.vscode-ant-design-vue-helper",
+    "bradlc.vscode-tailwindcss",
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "streetsidesoftware.code-spell-checker",
+    "stylelint.vscode-stylelint",
+    "vue.volar"
+  ]
+}

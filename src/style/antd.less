@@ -1,0 +1,17 @@
+/* Ant Design Vue 全局样式配置 */
+
+// 表格
+.ant-table {
+  // 表格内容为空时的样式
+  .ant-table-cell:empty::after {
+    content: '--';
+  }
+}
+
+// 切换深色模式时的过渡效果
+.ant-menu,
+.ant-table-thead > tr > th {
+  transition: background 0s, width 0.3s cubic-bezier(0.2, 0, 0, 1) 0s !important;
+}
+
+

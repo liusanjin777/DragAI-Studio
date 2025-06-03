@@ -4,9 +4,13 @@ module.exports = {
     es2021: true,
     node: true
   },
-  extends: ['plugin:vue/vue3-essential', 'standard-with-typescript', 'plugin:prettier/recommended'],
+  extends: [
+    'plugin:vue/vue3-essential',
+    'standard-with-typescript',
+    'plugin:prettier/recommended'
+  ],
   overrides: [],
-  parser: 'vue-eslint-parser',//vue解析器
+  parser: 'vue-eslint-parser', //vue解析器
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
@@ -16,7 +20,7 @@ module.exports = {
       './tsconfig.config.json',
       './tsconfig.vitest.json'
     ],
-    parser: '@typescript-eslint/parser',//ts解析
+    parser: '@typescript-eslint/parser', //ts解析
     extraFileExtensions: ['.vue']
   },
   plugins: ['vue'],
@@ -25,6 +29,7 @@ module.exports = {
     '@typescript-eslint/method-signature-style': 'off',
     'vue/multi-word-component-names': 'off',
     '@typescript-eslint/triple-slash-reference': 'off',
-    '@typescript-eslint/consistent-type-imports': 'off'
+    '@typescript-eslint/consistent-type-imports': 'off',
+    'prettier/prettier': ['error', { endOfLine: 'auto' }]
   }
 }

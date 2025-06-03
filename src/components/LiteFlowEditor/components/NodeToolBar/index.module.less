@@ -1,0 +1,143 @@
+.liteflowNodeToolBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  .liteflowAddNodePrepend {
+    position: absolute;
+    top: 5px;
+    left: -18px;
+    width: 18px;
+    height: 20px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+
+    .liteflowAddNodePrependIcon {
+      width: 100%;
+      height: 100%;
+      background: url('../../assets/indicator-icons.svg') -1px 0 no-repeat;
+      background-size: cover;
+      filter: opacity(0.5);
+    }
+
+    &:hover .liteflowAddNodePrependIcon {
+      filter: opacity(1);
+    }
+  }
+
+  .liteflowAddNodeAppend {
+    position: absolute;
+    top: 5px;
+    right: -17px;
+    width: 18px;
+    height: 20px;
+    background-color: #d9d9d9;
+    border-radius: 8px;
+
+    .liteflowAddNodeAppendIcon {
+      width: 100%;
+      height: 100%;
+      background: url('../../assets/indicator-icons.svg') -16px 0 no-repeat;
+      background-size: cover;
+      filter: opacity(0.5);
+    }
+
+    &:hover .liteflowAddNodeAppendIcon {
+      filter: opacity(1);
+    }
+  }
+
+  .liteflowTopToolBar {
+    position: absolute;
+    top: -24px;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -25px;
+    width: 50px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0 0 0 1px rgb(64 87 109 / 7%), 0 2px 12px rgb(53 71 90 / 20%);
+  }
+
+  .liteflowToolBarBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    font-size: 16px;
+    border: 1px solid transparent;
+
+    &:hover {
+      background-color: rgb(64 87 109 / 7%);
+      border: 1px solid #ccc;
+    }
+  }
+
+  .liteflowDeleteNode {
+    position: relative;
+    color: #f54a45;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: -4px;
+      width: 1px;
+      height: 18px;
+      content: ' ';
+      border-left: solid 1px rgb(57 76 96 / 15%);
+    }
+  }
+
+  .liteflowBottomToolBar {
+    position: absolute;
+    top: 24px;
+    left: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: -25px;
+    width: 50px;
+    height: 24px;
+
+    &.show {
+      display: flex !important;
+    }
+  }
+
+  .liteflowCollapseNode {
+    position: relative;
+    top: -2px;
+    width: 12px;
+    height: 12px;
+    font-size: 12px;
+    color: #c1c1c1;
+    background: rgb(255 255 255 / 85%);
+
+    &:hover {
+      color: rgb(0 0 0 / 85%);
+      background: #fff;
+    }
+  }
+
+  .liteflowAddNodePrepend,
+  .liteflowAddNodeAppend,
+  .liteflowTopToolBar,
+  .liteflowBottomToolBar {
+    display: none;
+  }
+
+  &:hover {
+    .liteflowAddNodePrepend,
+    .liteflowAddNodeAppend,
+    .liteflowTopToolBar,
+    .liteflowBottomToolBar {
+      display: flex;
+    }
+  }
+}

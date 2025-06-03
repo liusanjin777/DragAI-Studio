@@ -1,12 +1,13 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Layout from '@/layouts/page/default.vue'
+import Flow from '@/views/Flow.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
     {
       path: '/',
-      component: Layout,
+      component: Flow,
       children: [
         {
           path: '',
